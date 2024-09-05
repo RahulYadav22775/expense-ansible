@@ -24,8 +24,8 @@
       instance_type: "t3.micro"
       security_group: "{{ sg_group }}"
       image_id: "{{ ami_id }}"
-      loop: "{{instances}}"
-      register: ec2_instances
+    loop: "{{instances}}"
+    register: ec2_instances
 
   - name: checking the output of instances
     ansible.builtin.debug:
