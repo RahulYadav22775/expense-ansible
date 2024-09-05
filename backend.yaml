@@ -1,5 +1,5 @@
 - name: backend config with ansible
-  hosts:backend
+  hosts: backend
   become: yes
   tasks:
   - name: disable nodejs
