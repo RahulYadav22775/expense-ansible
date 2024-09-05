@@ -3,7 +3,7 @@
   become: yes
   vars:
       login_user: root
-      mysql_root_password: ExpenseApp@1
+      mysql_root_password: "ExpenseApp@1"
       login_host: "mysql.gopi-81s.online"
   tasks:
   - name: installing mysql-server
